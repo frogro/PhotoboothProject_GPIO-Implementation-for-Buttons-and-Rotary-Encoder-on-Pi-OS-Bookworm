@@ -1,5 +1,5 @@
 # Photobooth Project:GPIO implementation for buttons and rotary encoder on Pi OS Bookworm
-This code allows you to connect hardware buttons and a rotary encoder to the GPIOs of a Raspberry Pi with the latested Raspberry Pi OS Bookwork (Linux 6.6 Kernel) in the Photooboth Project of Andreas Skomski. Support in the Photobooth Project was broken as Linux 6.6 Kernel is not able to handle the GPIO buttons via sysfs anymore.
+This code allows you to connect hardware buttons and a rotary encoder to the GPIOs of a Raspberry Pi with the latested Raspberry Pi OS Bookwork (Linux 6.6 Kernel) in the Photooboth Project of Andreas Skomski. GPIO support was broken as Linux 6.6 Kernel is not able to handle the GPIO buttons via sysfs anymore.
 
 Preparation:
 
