@@ -16,4 +16,4 @@ sudo nano /boot/firmware/config.txt
     dtoverlay=gpio-key,gpio=16,keycode=31,label="s",gpio_pull=2
     dtoverlay=gpio-key,gpio=11,keycode=50,label="m",gpio_pull=2
 
-Start the script with the command "python3 gpiosupport.py" or set it up as an autostart script (cronjob/service). If it does not work install the required dependency python3-evdev first: sudo apt install python3-evdev.
+Start the script with the command "python3 gpiosupport.py" or set up an autostart script (cronjob/service) to start the python command. If it does not work install the required dependency python3-evdev first: sudo apt install python3-evdev.
