@@ -2,6 +2,7 @@
 This code allows you to connect hardware buttons and a rotary encoder to the GPIOs of a Raspberry Pi with the latested Raspberry Pi OS Bookworm (Linux 6.6 Kernel) in the Photooboth Project of Andreas Skomski. GPIO support was broken as Linux 6.6 Kernel is not able to handle the GPIO buttons via sysfs anymore.
 
 Preparation:
+Install the required dependency python3-evdev: sudo apt install python3-evdev
 
 Copy the following lines to the end of config.txt:
 
@@ -16,4 +17,4 @@ sudo nano /boot/firmware/config.txt
     dtoverlay=gpio-key,gpio=16,keycode=31,label="s",gpio_pull=2
     dtoverlay=gpio-key,gpio=11,keycode=50,label="m",gpio_pull=2
 
-Start the script with the command "python3 gpiosupport.py" or set up an autostart script (cronjob/service) to start the python script. If it does not work install the required dependency python3-evdev first: sudo apt install python3-evdev.
+Start the script with the command "python3 gpiosupport.py" or set up an autostart script (cronjob/service) to start the python script.
